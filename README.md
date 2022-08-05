@@ -13,7 +13,7 @@ Script for taking screenshots in Unity.
 
 ## How to use?
 There are two ways to use this script.
-1. First, designed for ```Desktop/Editor``` only, the script needs to be attached to an GameObject on the scene, connect the ```Camera``` from which the pixels will be read and start the game. And when you press the ```P``` key (or the one you specified), a screenshot will be taken and the file path will be logged in the console.
+1. First, designed for ```Editor``` only, the script needs to be attached to an GameObject on the scene, connect the ```Camera``` from which the pixels will be read and start the game. And when you press the ```P``` key (or the one you specified), a screenshot will be taken and the file path will be logged in the console.
 2. The second way is to run a static coroutine from outside the script.
 ```csharp
 StartCoroutine(SimpleThumbnail.Take(Camera, Action<Texture2D>, float))
